@@ -4,6 +4,7 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Basic_r-w.h</itemPath>
       <itemPath>main.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
@@ -13,6 +14,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>Basic_r-w.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -40,6 +42,10 @@
           <standard>10</standard>
         </cTool>
       </compileType>
+      <item path="Basic_r-w.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Basic_r-w.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.h" ex="false" tool="3" flavor2="0">
@@ -66,6 +72,10 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path="Basic_r-w.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Basic_r-w.h" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="main.h" ex="false" tool="3" flavor2="0">

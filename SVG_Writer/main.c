@@ -13,20 +13,12 @@
  *  It is callable with the options: i, s and f.
  *  -i: Input file
  *  -s: Name for the SVG file
- *  -f: Format options (optional) g (with grid), s (with scale)
+ *  -f: Format options g (with grid), s (with scale)
  *	
  */
 
-/*
 #include "main.h"
-*/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <string.h>
-
-#define DEBUG
 
 /*
  * 
@@ -38,32 +30,28 @@ int main(int argc, char** argv) {
   char sarg[20] = "";
   char farg[20] = "";
   
-/*
   FILE *pDataset;
   FILE *pGraph;
   int num_datasets = 0;
   int max_value = 0;
-*/
-/*
   int data[100] = {};
-*/
   
-  while((opt = getopt(argc, argv, "i:s:f::")) != -1) {
+  while((opt = getopt(argc, argv, "i:s:f:")) != -1) {
     switch(opt) {
       case 'i':
-        strcpy(iarg, optarg);
+        strlcpy(iarg, optarg, 20);
         break;
       case 's':
-        strcpy(sarg, optarg);
+        strlcpy(sarg, optarg, 20);
         break;
       case 'f':
-        strcpy(farg, optarg);
+        strlcpy(farg, optarg, 20);
         break;
       case '?':
         fprintf(stderr, "Usage:\n"
                 "\t-i: Input\n"
                 "\t-s: Store to\n"
-                "\t-f: format: g (Grid), s (Scale), default: -\n");
+                "\t-f: format: g (Grid), s (Scale), one must be present\n");
         break;
     }
   }
@@ -74,7 +62,6 @@ int main(int argc, char** argv) {
   printf("f: %s\n", farg);
 #endif
   
-/*
   pDataset = fopen(iarg, "r");
   if(pDataset == NULL) {
     printf("Dataset could not be opened!\n");
@@ -85,27 +72,26 @@ int main(int argc, char** argv) {
     printf("SVG file could not be created!\n");
     return(EXIT_FAILURE);
   }
-*/
   
-/*
+#ifdef DEBUG
+  printf("All files opened/created successfully\n");
+#endif
+  
   Read_Data(pDataset, data, &num_datasets, &max_value);
-*/
   
   printf("data:\n");
-/*
   for(int c = 0; c < sizeof(data); c++) {
     printf("\t%d", data[c]);
   }
-*/
   
-/*
   Print_Header(num_datasets, max_value);
-*/
   
-/*
   fclose(pDataset);
   fclose(pGraph);
-*/
+  
+#ifdef DEBUG
+  printf("All files closed again");
+#endif
   
   return (EXIT_SUCCESS);
 }

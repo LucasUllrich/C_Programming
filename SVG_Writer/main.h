@@ -14,10 +14,12 @@
 #include <unistd.h>
 #include <string.h>
 
+#ifndef DEBUG
 #define DEBUG
+#endif
 
 /* User Header files */
-//#include "Basic_r-w.h"
+#include "Basic_r-w.h"
 
 
 
