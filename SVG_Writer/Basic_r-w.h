@@ -9,9 +9,8 @@
 #ifndef BASIC_R_W_H
 #define BASIC_R_W_H
 
-int buf_to_dec(char *data_buf);
-void Read_Data(FILE *pDataset, int *data, int *num_datasets, int *max_value);
-void Print_Header(int width, int height);
+void read_data(FILE *pDataset, int *data, int *num_datasets, int *max_value);
+void print_header(int width, int height);
 
 #endif /* BASIC_R_W_H */
 

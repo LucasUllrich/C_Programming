@@ -39,13 +39,13 @@ int main(int argc, char** argv) {
   while((opt = getopt(argc, argv, "i:s:f:")) != -1) {
     switch(opt) {
       case 'i':
-        strlcpy(iarg, optarg, 20);
+        strncpy(iarg, optarg, 20);
         break;
       case 's':
-        strlcpy(sarg, optarg, 20);
+        strncpy(sarg, optarg, 20);
         break;
       case 'f':
-        strlcpy(farg, optarg, 20);
+        strncpy(farg, optarg, 20);
         break;
       case '?':
         fprintf(stderr, "Usage:\n"
@@ -77,14 +77,14 @@ int main(int argc, char** argv) {
   printf("All files opened/created successfully\n");
 #endif
   
-  Read_Data(pDataset, data, &num_datasets, &max_value);
+  read_data(pDataset, data, &num_datasets, &max_value);
   
-  printf("data:\n");
-  for(int c = 0; c < sizeof(data); c++) {
-    printf("\t%d", data[c]);
+  printf("datastring:\n");
+  for(int c = 0; c < num_datasets; c++) {
+    printf("\t%d\n", data[c]);
   }
   
-  Print_Header(num_datasets, max_value);
+  print_header(num_datasets, max_value);
   
   fclose(pDataset);
   fclose(pGraph);

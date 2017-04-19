@@ -7,31 +7,29 @@
 
 #include "main.h"
 
-int buf_to_dec(char *data_buf) {
-  int dec = 0;
-  for(int c = 0; c <= strlen(data_buf); c++) {
-    dec += 10 * (strlen(data_buf) - c) * (data_buf[c] - 48);
-  }
-  return dec;
-}
-
-void Read_Data(FILE *pDataset, int *data, int *num_datasets, int *max_value) {
+void read_data(FILE *pDataset, int *data, int *num_datasets, 
+        int *max_value) {
   
 #ifdef DEBUG
-  printf("Read_Data routine accessed");
+  printf("Read_Data routine accessed\n");
 #endif
   
+
   size_t line_length = 0;
-  char *line;
+  char *line = NULL;
   char *pdata_buf;
-  
+
 #ifdef DEBUG
   if(pDataset == NULL) {
     printf("Data-File not opened");
   }else {
-    fprintf(pDataset,"!\n");
+/*
+    fprintf(pDataset, "!\n");
+*/
+    printf("Dataset opened successfully\n");
   }
 #endif
+
   
   getline(&line, &line_length, pDataset);
   if(strlen(line) == 0) {
@@ -39,23 +37,50 @@ void Read_Data(FILE *pDataset, int *data, int *num_datasets, int *max_value) {
     return;     //**** Abbort, no data found
   }
 #ifdef DEBUG
-  printf("%s", line);
+  printf("line: %s\n", line);
 #endif
-  pdata_buf = strtok(line, " ");
-  data[*num_datasets] = buf_to_dec(pdata_buf);
+  pdata_buf = strtok(line, " \n");
+  sscanf(pdata_buf, "%d", &data[*num_datasets]);
   *max_value = data[*num_datasets];
   *num_datasets = 1;
-  while(data != NULL && *num_datasets < 100) {
-    pdata_buf = strtok(NULL, " ");
-    data[*num_datasets] = buf_to_dec(pdata_buf);
+#ifdef DEBUG
+  printf("Buf: %s\n", pdata_buf);
+  printf("Data: %d\n", data[0]);
+#endif
+
+  while(pdata_buf != NULL/* && *num_datasets < 100*/) {
+    pdata_buf = strtok(NULL, " \n");
+    sscanf(pdata_buf, "%d", &data[*num_datasets]);
+#ifdef DEBUG
+    printf("Dataset Nr. %d read\n", *num_datasets);
+    printf("Dataset-Value: %d\n", data[*num_datasets]);
+    printf("databuf: %s\n", pdata_buf);
+    printf("Number: %d\n", *num_datasets);
+#endif
+
     if(data[*num_datasets] > *max_value) {
       *max_value = data[*num_datasets];
     }
+
     *num_datasets = *num_datasets + 1;
+    printf(".\n");
+
+    /*
+#ifdef DEBUG
+    printf("Dataset Nr. %d read\n", *num_datasets);
+    printf("Dataset-Value: %d\n", data[*num_datasets]);
+    printf("databuf: %s\n", pdata_buf);
+    printf("Number: %d\n", *num_datasets);
+#endif
+*/
   }
+#ifdef DEBUG
+  printf("End of read routine reached\n");
+#endif
+
 }
 
 
-void Print_Header(int width, int height) {
+void print_header(int width, int height) {
   
 }

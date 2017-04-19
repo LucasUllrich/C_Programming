@@ -13,6 +13,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <inttypes.h>
 
 #ifndef DEBUG
 #define DEBUG
