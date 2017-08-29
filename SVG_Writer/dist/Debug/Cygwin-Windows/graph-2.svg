@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.1" baseProfile="full"
+width="1600" height="1500"
+viewBox="-100 -1400 1600 1500">
+<title>Graph</title>
+<desc>Graph generated ob a set of numbers</desc>
+
+<rect x="0" y="-1300" width="1400" height="1300" stroke="black" stroke-width="3" fill="white" />
+<line x1="0" y1="-0" x2="0" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="100" y1="-0" x2="100" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="200" y1="-0" x2="200" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="300" y1="-0" x2="300" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="400" y1="-0" x2="400" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="500" y1="-0" x2="500" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="600" y1="-0" x2="600" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="700" y1="-0" x2="700" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="800" y1="-0" x2="800" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="900" y1="-0" x2="900" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="1000" y1="-0" x2="1000" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="1100" y1="-0" x2="1100" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="1200" y1="-0" x2="1200" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="1300" y1="-0" x2="1300" y2="-1300" stroke-width="1" stroke="black" />
+<line x1="0" y1="-0" x2="1400" y2="-0" stroke-width="1" stroke="black" />
+<line x1="0" y1="-100" x2="1400" y2="-100" stroke-width="1" stroke="black" />
+<line x1="0" y1="-200" x2="1400" y2="-200" stroke-width="1" stroke="black" />
+<line x1="0" y1="-300" x2="1400" y2="-300" stroke-width="1" stroke="black" />
+<line x1="0" y1="-400" x2="1400" y2="-400" stroke-width="1" stroke="black" />
+<line x1="0" y1="-500" x2="1400" y2="-500" stroke-width="1" stroke="black" />
+<line x1="0" y1="-600" x2="1400" y2="-600" stroke-width="1" stroke="black" />
+<line x1="0" y1="-700" x2="1400" y2="-700" stroke-width="1" stroke="black" />
+<line x1="0" y1="-800" x2="1400" y2="-800" stroke-width="1" stroke="black" />
+<line x1="0" y1="-900" x2="1400" y2="-900" stroke-width="1" stroke="black" />
+<line x1="0" y1="-1000" x2="1400" y2="-1000" stroke-width="1" stroke="black" />
+<line x1="0" y1="-1100" x2="1400" y2="-1100" stroke-width="1" stroke="black" />
+<line x1="0" y1="-1200" x2="1400" y2="-1200" stroke-width="1" stroke="black" />
+<text x="50" y="50" font-size="50" text-anchor="middle" >1</text>
+<text x="150" y="50" font-size="50" text-anchor="middle" >2</text>
+<text x="250" y="50" font-size="50" text-anchor="middle" >3</text>
+<text x="350" y="50" font-size="50" text-anchor="middle" >4</text>
+<text x="450" y="50" font-size="50" text-anchor="middle" >5</text>
+<text x="550" y="50" font-size="50" text-anchor="middle" >6</text>
+<text x="650" y="50" font-size="50" text-anchor="middle" >7</text>
+<text x="750" y="50" font-size="50" text-anchor="middle" >8</text>
+<text x="850" y="50" font-size="50" text-anchor="middle" >9</text>
+<text x="950" y="50" font-size="50" text-anchor="middle" >10</text>
+<text x="1050" y="50" font-size="50" text-anchor="middle" >11</text>
+<text x="1150" y="50" font-size="50" text-anchor="middle" >12</text>
+<text x="1250" y="50" font-size="50" text-anchor="middle" >13</text>
+<text x="1350" y="50" font-size="50" text-anchor="middle" >14</text>
+<text x="-50" y="-35" font-size="50" text-anchor="middle" >1</text>
+<text x="-50" y="-135" font-size="50" text-anchor="middle" >2</text>
+<text x="-50" y="-235" font-size="50" text-anchor="middle" >3</text>
+<text x="-50" y="-335" font-size="50" text-anchor="middle" >4</text>
+<text x="-50" y="-435" font-size="50" text-anchor="middle" >5</text>
+<text x="-50" y="-535" font-size="50" text-anchor="middle" >6</text>
+<text x="-50" y="-635" font-size="50" text-anchor="middle" >7</text>
+<text x="-50" y="-735" font-size="50" text-anchor="middle" >8</text>
+<text x="-50" y="-835" font-size="50" text-anchor="middle" >9</text>
+<text x="-50" y="-935" font-size="50" text-anchor="middle" >10</text>
+<text x="-50" y="-1035" font-size="50" text-anchor="middle" >11</text>
+<text x="-50" y="-1135" font-size="50" text-anchor="middle" >12</text>
+<text x="-50" y="-1235" font-size="50" text-anchor="middle" >13</text>
+<rect x="10" y="-400" width="80" height="400" stroke="black" stroke-width="0" fill="blue" />
+<rect x="110" y="-900" width="80" height="900" stroke="black" stroke-width="0" fill="blue" />
+<rect x="210" y="-600" width="80" height="600" stroke="black" stroke-width="0" fill="blue" />
+<rect x="310" y="-400" width="80" height="400" stroke="black" stroke-width="0" fill="blue" />
+<rect x="410" y="-0" width="80" height="0" stroke="black" stroke-width="0" fill="blue" />
+<rect x="510" y="-600" width="80" height="600" stroke="black" stroke-width="0" fill="blue" />
+<rect x="610" y="-400" width="80" height="400" stroke="black" stroke-width="0" fill="blue" />
+<rect x="710" y="-700" width="80" height="700" stroke="black" stroke-width="0" fill="blue" />
+<rect x="810" y="-1000" width="80" height="1000" stroke="black" stroke-width="0" fill="blue" />
+<rect x="910" y="-1300" width="80" height="1300" stroke="black" stroke-width="0" fill="blue" />
+<rect x="1010" y="-500" width="80" height="500" stroke="black" stroke-width="0" fill="blue" />
+<rect x="1110" y="-800" width="80" height="800" stroke="black" stroke-width="0" fill="blue" />
+<rect x="1210" y="-400" width="80" height="400" stroke="black" stroke-width="0" fill="blue" />
+<rect x="1310" y="-800" width="80" height="800" stroke="black" stroke-width="0" fill="blue" />
+
+</svg>

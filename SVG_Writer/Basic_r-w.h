@@ -10,7 +10,7 @@
 #define BASIC_R_W_H
 
 void read_data(FILE *pDataset, int *data, int *num_datasets, int *max_value);
-void print_header(int width, int height);
+void print_header(int width_buf, int height_buf);
 
 #endif /* BASIC_R_W_H */
 

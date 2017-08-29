@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
   char farg[20] = "";
   
   FILE *pDataset;
-  FILE *pGraph;
+  
   int num_datasets = 0;
   int max_value = 0;
   int data[100] = {};
@@ -79,12 +79,20 @@ int main(int argc, char** argv) {
   
   read_data(pDataset, data, &num_datasets, &max_value);
   
-  printf("datastring:\n");
-  for(int c = 0; c < num_datasets; c++) {
-    printf("\t%d\n", data[c]);
+  print_header(num_datasets, max_value);
+  
+  if(strcspn(farg, "g") < strlen(farg)) {
+    print_grid(num_datasets, max_value);
+  }
+  if(strcspn(farg, "s") < strlen(farg)) {
+    print_scaling(num_datasets, max_value);
   }
   
-  print_header(num_datasets, max_value);
+  for(int c = 0; c < num_datasets; c++) {
+    print_bar(data[c], c);
+  }
+  
+  fputs("\n</svg>", pGraph);    // End of Graph file
   
   fclose(pDataset);
   fclose(pGraph);

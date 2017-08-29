@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+version="1.1" baseProfile="full"
+width="700" height="700"
+viewBox="-100 -600 700 700">
+<title>Graph</title>
+<desc>Graph generated ob a set of numbers</desc>
+
+<rect x="0" y="-500" width="500" height="500" stroke="black" stroke-width="3" fill="white" />
+<line x1="0" y1="-0" x2="0" y2="-500" stroke-width="1" stroke="black" />
+<line x1="100" y1="-0" x2="100" y2="-500" stroke-width="1" stroke="black" />
+<line x1="200" y1="-0" x2="200" y2="-500" stroke-width="1" stroke="black" />
+<line x1="300" y1="-0" x2="300" y2="-500" stroke-width="1" stroke="black" />
+<line x1="400" y1="-0" x2="400" y2="-500" stroke-width="1" stroke="black" />
+<line x1="0" y1="-0" x2="500" y2="-0" stroke-width="1" stroke="black" />
+<line x1="0" y1="-100" x2="500" y2="-100" stroke-width="1" stroke="black" />
+<line x1="0" y1="-200" x2="500" y2="-200" stroke-width="1" stroke="black" />
+<line x1="0" y1="-300" x2="500" y2="-300" stroke-width="1" stroke="black" />
+<line x1="0" y1="-400" x2="500" y2="-400" stroke-width="1" stroke="black" />
+<text x="50" y="50" font-size="50" text-anchor="middle" >1</text>
+<text x="150" y="50" font-size="50" text-anchor="middle" >2</text>
+<text x="250" y="50" font-size="50" text-anchor="middle" >3</text>
+<text x="350" y="50" font-size="50" text-anchor="middle" >4</text>
+<text x="450" y="50" font-size="50" text-anchor="middle" >5</text>
+<text x="-50" y="-35" font-size="50" text-anchor="middle" >1</text>
+<text x="-50" y="-135" font-size="50" text-anchor="middle" >2</text>
+<text x="-50" y="-235" font-size="50" text-anchor="middle" >3</text>
+<text x="-50" y="-335" font-size="50" text-anchor="middle" >4</text>
+<text x="-50" y="-435" font-size="50" text-anchor="middle" >5</text>
+<rect x="10" y="-100" width="80" height="100" stroke="black" stroke-width="0" fill="blue" />
+<rect x="110" y="-200" width="80" height="200" stroke="black" stroke-width="0" fill="blue" />
+<rect x="210" y="-300" width="80" height="300" stroke="black" stroke-width="0" fill="blue" />
+<rect x="310" y="-200" width="80" height="200" stroke="black" stroke-width="0" fill="blue" />
+<rect x="410" y="-500" width="80" height="500" stroke="black" stroke-width="0" fill="blue" />
+
+</svg>

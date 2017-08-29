@@ -15,14 +15,15 @@
 #include <string.h>
 #include <inttypes.h>
 
-#ifndef DEBUG
-#define DEBUG
-#endif
+//#ifndef DEBUG
+//#define DEBUG
+//#endif
 
 /* User Header files */
 #include "Basic_r-w.h"
+#include "graph_print.h"
 
-
+FILE *pGraph;
 
 #endif /* MAIN_H */
 
